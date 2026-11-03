@@ -3,4 +3,4 @@
 Project documentation.
 
 - `research/`: background notes (heart conditions such as Long QT and Brugada, signal processing, papers).
-- `meetings/`: meeting summaries with the supervisor and the other students.
+- `planning/`: the task tracker (`TODO.md`) and project plans (`plans.md`).
