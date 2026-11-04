@@ -35,6 +35,11 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Priority:** Low
 - **Notes:**
 
+### T6. Review the Moodle project page and collect important documents
+- **Status:** [ ]
+- **Priority:** High
+- **Notes:** Urgent task. Review the Project B Moodle page and copy all relevant project documents into the appropriate repository folders, especially `docs/lab_docs/`, `docs/refs/`, `docs/research/`, and `docs/presentations_and_reports/`. Check dates and mark documents that are outdated or from a previous academic year.
+
 ## Done
 
 <!-- Finished tasks are moved here, keeping their number and Notes. -->
