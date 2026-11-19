@@ -16,3 +16,6 @@ venv/
 .DS_Store
 Thumbs.db
 .vscode/
+
+# Patient data from previous projects (references)
+docs/refs/*/data/
