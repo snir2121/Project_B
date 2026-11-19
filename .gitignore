@@ -1,7 +1,9 @@
-# Patient data and trained models stay local
-data/raw/*
-data/processed/*
-!data/*/.gitkeep
+# Patient data and trained models stay local.
+# Everything under data/ is ignored except READMEs and .gitkeep placeholders.
+data/**
+!data/**/
+!data/**/README.md
+!data/**/.gitkeep
 models/*
 !models/README.md
 
