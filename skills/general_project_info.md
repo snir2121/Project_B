@@ -10,6 +10,16 @@
 - **Summary:** The project develops an AI tool for analyzing signals collected from a heart-monitoring device, with the goal of identifying early signs of heart disease and supporting revolutionary research at Rambam Hospital.
 - **Data source:** A Holter device worn by a patient for approximately 24 hours. The system collects signals from 12 probes attached to different areas of the body. The source project description was cut off after “...in the”, so the remaining text is unknown.
 
+## Project-specific context for agents
+
+- **Mony:** Laboratory administrator.
+- **Boaz Mizrachi:** Project instructor/mentor and a friend of the doctor; supervisor contact is listed above.
+- **The doctor:** A heart-disease specialist at Rambam Hospital. The project supports her work by helping classify heart diseases; it is not a substitute for clinical diagnosis.
+- Noam is a former student who worked on this project. His report and reference materials are in `docs/refs/Noam_project/`.
+- Noam used the public LUDB and ISP ECG databases for annotated wave-segmentation work. Their four target classes are P-wave, QRS complex, T-wave, and background. His report also describes a separate clinically annotated Brugada dataset from ISHNE/Rambam recordings.
+- The report confirms an approximately 30 ms QT/QTc measurement offset during clinical validation. Do not repeat the remembered 20 µs figure as fact without verifying it.
+- Boaz indicated that classified Long QT data may not exist. Confirm this with the doctor before assuming it is available. Brugada is currently the more important clinical priority, although Long QT may be technically easier.
+
 ## Intended system
 
 The project will develop a heart-disease classifier to help a cardiac specialist assess whether a patient may be predisposed to a specific heart disease. The system is intended to support clinical specialists; it is not a replacement for medical diagnosis.

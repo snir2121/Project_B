@@ -40,3 +40,11 @@ When adding an entry to "Ideas", "Decisions" or "General notes", include the dat
 ## General notes
 
 <!-- Free-form comments, meeting summaries, links. Add the date to each entry. -->
+
+### 2026-11-19 — Prior work and data context
+
+- Noam is a former student who worked on this project. His project references and report are stored under `docs/refs/Noam_project/`.
+- The report documents work on the public LUDB and ISP databases. These provide ECG-wave annotations for four segmentation classes: P-wave, QRS complex, T-wave, and background. The report describes Long QT analysis using these online datasets.
+- The report separately documents a clinical Brugada dataset derived from ISHNE Holter recordings annotated by cardiologists at Rambam, with Brugada Type 1 windows extracted for classification. The report says this dataset contained 273 patient windows. Confirm that this is the same classified Brugada data currently available to us.
+- The report documents an approximately **30 ms** systematic QT/QTc measurement offset during clinical validation, not a 20 µs classification error. Treat the remembered 20 µs figure as unconfirmed until the report or source code establishes it.
+- Boaz said that classified Long QT data may not be available. The clinical priority is Brugada, while Long QT is considered the easier project. Confirm the Long QT data situation with the doctor before planning around it.

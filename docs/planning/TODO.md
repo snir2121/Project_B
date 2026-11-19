@@ -25,20 +25,28 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Description:** Define (characterize) the product, together with the other students. See "Goals and requirements" in project_plans.md.
 - **Notes:**
 
-### T4. Get access to data from the students
+### T4. Get access to a gpu station and move the data there.
 - **Status:** [ ]
 - **Priority:** High
-- **Notes:** talk to students who worked on this project before us, see their projects, get aceess to code, data etc...
+- **Notes:** - waiting for Mony's answer.
 
 ### T5. Find out the frequency resolution from the monitor manufacturer
 - **Status:** [ ]
 - **Priority:** Low
 - **Notes:**
 
-### T6. Review the Moodle project page and collect important documents
+### T7. Classify the raw data
 - **Status:** [ ]
 - **Priority:** High
-- **Notes:** Urgent task. Review the Project B Moodle page and copy all relevant project documents into the appropriate repository folders, especially `docs/lab_docs/`, `docs/refs/`, `docs/research/`, and `docs/presentations_and_reports/`. Check dates and mark documents that are outdated or from a previous academic year.
+- **Description:** Understand what raw data we have, how it is organized, and how it is labeled.
+- **Notes:**
+
+### T8. Confirm whether classified Long QT data exists
+- **Status:** [ ]
+- **Priority:** High
+- **Description:** Ask the doctor whether classified Long QT samples are available; Boaz indicated that they may not be.
+- **Notes:** The project priority is currently Brugada, but this determines whether a Long QT classifier is feasible.
+
 
 ## Done
 
