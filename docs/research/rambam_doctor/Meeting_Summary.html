@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Requirements: Holter AI Analyzer</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #16a085;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .highlight-box {
+            background-color: #e8f6f3;
+            border-left: 5px solid #1abc9c;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        .alert-box {
+            background-color: #fdedec;
+            border-left: 5px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+        }
+        .metric {
+            font-weight: bold;
+            color: #d35400;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #7f8c8d;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Project Requirements: AI Holter Monitor Analyzer</h1>
+    <p><strong>Project Goal:</strong> Develop an automated AI-based system to analyze 24-hour multi-lead Holter ECG recordings to prevent Sudden Cardiac Death (SCD) in the young.</p>
+    <p><strong>Target Pathologies:</strong> Brugada Syndrome (Type 1) and Congenital Long QT Syndrome.</p>
+
+    <hr>
+
+    <h2>1. Brugada Syndrome (Type 1) Detection</h2>
+    
+    <h3>Target Leads (Input)</h3>
+    <ul>
+        <li><strong>Standard Placement:</strong> Analyze leads <strong>V1, V2, and V3</strong>.</li>
+        <li><strong>High Lead (HL) Placement:</strong> If metadata indicates High Leads, also analyze <strong>V5 and V6</strong>.</li>
+    </ul>
+
+    <div class="highlight-box">
+        <h3>Detection Logic (Heuristics)</h3>
+        <p>The AI must identify a "Coved" ST-segment elevation. A positive detection requires <strong>both</strong> of the following conditions:</p>
+        <ol>
+            <li><strong>Amplitude Threshold:</strong> The J-point peak amplitude must be <strong>&gt; 0.2 mV</strong> (Visual equivalent: higher than 2 small ECG squares).</li>
+            <li><strong>Morphology Shape:</strong> There must be a <strong>monotonic downward slope</strong> from the J-point to the T-wave point.</li>
+        </ol>
+    </div>
+
+    <hr>
+
+    <h2>2. Long QT Syndrome Detection</h2>
+
+    <h3>Target Leads (Input)</h3>
+    <p>Analysis is performed across <strong>all 12 leads</strong>.</p>
+
+    <div class="alert-box">
+        <h3>Filter Rule: The Stability Check</h3>
+        <p>Before calculating QT intervals, the signal must be filtered for heart rate stability:</p>
+        <ul>
+            <li><strong>Condition:</strong> If the heart rate changes by more than <strong>10 BPM within 1 minute</strong>, the segment is considered <em>unstable</em>.</li>
+            <li><strong>Action:</strong> Discard segment. Do not calculate QT for this window.</li>
+        </ul>
+    </div>
+
+    <h3>Measurement Thresholds</h3>
+    <p>We measure the absolute QT interval from the onset of the Q-wave to the end of the T-wave. We then normalize this value using Bazett's Formula (QTc = QT / square root of RR):</p>
+    <ul>
+        <li><strong>Men:</strong> Abnormal if QTc &gt; <strong>440 ms</strong>.</li>
+        <li><strong>Women:</strong> Abnormal if QTc &gt; <strong>460 ms</strong>.</li>
+    </ul>
+    <p><em>Note: System must ingest patient gender as metadata.</em></p>
+
+    <hr>
+
+    <h2>3. System Output & Scoring</h2>
+    <p>The system does not provide a binary "Sick/Healthy" result. It calculates the <strong>burden</strong> of the disease over the 24-hour recording.</p>
+
+    <h3>Primary Metrics</h3>
+    <ul>
+        <li><strong>Presence:</strong> Is the phenomenon detected? (Yes/No)</li>
+        <li><strong>Burden:</strong> What percentage of the valid 24-hour recording contains the pattern?</li>
+    </ul>
+
+    <h3>Final Score (1-3 Scale)</h3>
+    <table>
+        <tr>
+            <th>Score</th>
+            <th>Meaning</th>
+            <th>Clinical Implication</th>
+        </tr>
+        <tr>
+            <td><strong>1</strong></td>
+            <td>Normal</td>
+            <td>Phenomena absent or negligible.</td>
+        </tr>
+        <tr>
+            <td><strong>2</strong></td>
+            <td>Intermediate / Monitoring</td>
+            <td>Phenomena present but low burden/frequency.</td>
+        </tr>
+        <tr>
+            <td><strong>3</strong></td>
+            <td>Treatment Required</td>
+            <td>Phenomena appear frequently/high burden.</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>4. Dataset Availability</h2>
+    <p>The model training will utilize the following dataset from Rambam Health Care Campus:</p>
+    <table>
+        <tr>
+            <th>Condition</th>
+            <th>Recordings (Patients)</th>
+            <th>Total ECG Tracings</th>
+        </tr>
+        <tr>
+            <td>Brugada Type 1</td>
+            <td>103</td>
+            <td>309,000</td>
+        </tr>
+        <tr>
+            <td>Long QT Syndrome</td>
+            <td>400</td>
+            <td>1,200,000</td>
+        </tr>
+    </table>
+
+    <footer>
+        Generated based on PDR Presentation, Cardiologist Presentation, and Technical Meeting Notes.
+    </footer>
+</div>
+
+</body>
+</html>

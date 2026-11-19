@@ -1,10 +1,10 @@
 # High-Speed Digital Systems Laboratory — Project Handbook
 
 **Technion – Israel Institute of Technology | Faculty of Electrical Engineering**  
-**Spring 2025 (5785)**  
+**Winter 2026–2027 (5787)**  
 Laboratory website: https://diglab.technion.ac.il
 
-> English translation of *project_intraduction - Hebrew (3).pdf* (25 pages). Original page numbers are indicated below. Dates, addresses, room numbers, and administrative directions are retained as printed in the 2025 source; they have not been verified for the current semester.
+> English translation of *lab_guidelines_2027.pdf* (25 pages). Original page numbers are indicated below. Dates and administrative instructions are retained from the Winter 2026–2027 source. **The schedule on p. 14 is explicitly for one-semester laboratory projects; the separate Project B course document lists its own deadlines.**
 
 ## Contents (original page numbers)
 
@@ -106,7 +106,7 @@ These safety instructions are provided to students to prevent accidents while ca
 
 - Laboratory staff have first-aid and resuscitation training; seek their help and professional assistance in emergencies.
 - Consult safety noticeboards for emergency reporting and assistance to electric-shock victims. This information may save lives.
-- Two first-aid kits are in the laboratory: **Room 317-0 (with Eli)** and **Room 318 (with Ina)**.
+- Two first-aid kits are in the laboratory: **Room 317 (with Mony)** and **Room 318 (with Ina)**.
 - Use first-aid supplies only in emergencies.
 
 ### Emergency exits
@@ -129,7 +129,7 @@ Report immediately to laboratory staff:
 | Fire services | 102 |
 | Deputy administrative head for safety | 3033, 2146/7 |
 | Facilities and maintenance officer, Yehiel | 4776 |
-| Academic coordinator, Prof. Yitzhak Birk | 4637 |
+| Academic coordinator, Prof. Mark Silberstein | 4637 |
 | Assistant to the manager, Yaakov Yavor | 4678 |
 
 **Declaration:** I declare that I have read and understood all the foregoing clauses and undertake to comply with them. Violation of any clause, in whole or in part, may result in disciplinary action and loss of permission to continue the laboratory project.
@@ -171,6 +171,8 @@ Report immediately to laboratory staff:
 | Oz Shmueli | Fischbach 317 | 1928 | shmueli@ee.technion.ac.il |
 | Ina Rivkin | Fischbach 320 | 4789 | inna@ee.technion.ac.il |
 | Oron Port | — | — | oron.port@cornell.edu |
+| Jeries Mattar | — | — | jeriesmattar@campus.technion.ac.il |
+| Jaris Salah-Nasser | — | — | jeries.saleh@campus.technion.ac.il |
 
 ### Laboratory team
 
@@ -179,6 +181,7 @@ Report immediately to laboratory staff:
 | Mony Orbach | Fischbach 317-1 | 4664 | mony@ee.technion.ac.il |
 | Ina Rivkin | Fischbach 320 | 4789 | inna@ee.technion.ac.il |
 | Oz Shmueli | Fischbach 317 | 1928 | shmueli@ee.technion.ac.il |
+| Lena Bolkin | Fischbach 318 | — | elena@ee.technion.ac.il |
 | Menashe Moritz | Fischbach 319 | 3295 | menashem@ee.technion.ac.il |
 
 **Note:** Mailboxes are on floor 8 of the Meir Building; use them when necessary. Ask your supervisor for their mailbox number and phone numbers at which they can be reached.
@@ -237,19 +240,21 @@ Project completion     ──→ Submit project report
 
 ## Schedule for a one-semester project (p. 14)
 
-*The following dates and apparent inconsistencies are reproduced from the Spring 2025 source.*
+*Dates below are transcribed from the handbook's **one-semester project** timetable. These are distinct from the separate course-wide Project B (00440169) deadlines.*
 
 | Date | Week | Required activity | Notes |
 |---|---:|---|---|
-| 30/03/25 | 1 | Semester begins | |
-| 09/03/25 | 2 | Laboratory orientation for staff, supervisors and students; explanation of the semester and procedures; supervisor–student meeting to set a weekly meeting time | Introductory meeting |
-| 04/05/25 | 6 | Project specification presentation to the supervisor and laboratory staff; request special components | Specification |
-| 27/05/25 | 8 | Publication of the project design presentation schedule; students register according to arranged supervisor times | |
-| 03/06/25 | 9 | Present the project design to the supervisor and obtain design approval | Midterm |
-| 18/06/25 | 10 | Present the project design to laboratory staff, including a feasibility demonstration/test | Midterm |
-| 24/06/25 | 11 | Finish receiving components | Testing and implementation |
-| 01/07/25 | 12 | Finish construction, carry out initial tests, and report to laboratory staff | Testing and implementation |
-| 01/09/25 | — | Present the completed project and final report | Project presentation |
+| 28/10/26 | 1 | Semester begins | |
+| 04/11/26 | 2 | Laboratory orientation with lab staff, supervisors and students; explain the semester and procedures; arrange weekly supervisor meetings | Introductory meeting |
+| 30/11/26 | 6 | Project specification presentation to the supervisor and lab team; request any special components | Specification |
+| 23/12/26 | 8 | Publish the schedule for presenting the design to teaching staff; students register in coordination with their supervisor | |
+| 30/12/26 | 9 | Present project design to the supervisor and obtain approval | Midterm |
+| 05/01/27 | 11 | Present the project design to laboratory staff, including a feasibility test | Midterm |
+| 12/01/27 | 11 | Finish receiving components | Testing and implementation |
+| 19/01/27 | 12 | Finish construction, run initial tests, and report to laboratory staff | Testing and implementation |
+| 14/03/27 | — | Present the completed project together with the final report | Project presentation |
+
+**Cross-document note:** The separate *Project B — Submission Requirements (Winter 2026–2027)* states **midterm by January 20, 2027** and **final presentation/report by May 23, 2027**. It is not the same timetable as the single-semester lab schedule printed above; confirm which milestones apply to your registered project.
 
 ## Project management (p. 15)
 
@@ -376,18 +381,18 @@ The report documents the project in detail for future students who may continue 
 - Outside the lab, the project folder can be connected by mapping the network drive to the path below (replace the placeholder with the group number):
 
 ```text
-\\ee-ftp-stud.ef.technion.ac.il\Diglab_Projects\012024\Prj_<group-number>
+\\ee-ftp-stud.ef.technion.ac.il\Diglab_Projects\012026\Prj_<group-number>
 ```
 
 - Local drives are write-protected, except **C:\TEMP**, which is periodically cleared.
-- Application server: **diglabapps.ef.technion.ac.il**; access using **Remote Desktop**, only from the Technion network.
+- Application server: **Diglab-apps.ef.technion.ac.il**; access using **Remote Desktop**, only from the Technion network.
 - For questions or problems, contact **Ina Rivkin**, Room 318, extension 4789, **inna@ee.technion.ac.il**.
 
 ## Laboratory website (p. 21)
 
 **https://diglab.technion.ac.il**
 
-The username and password for opening project presentations in the website's project archive will be sent by email.
+The page lists the laboratory website. It shows the laboratory homepage.
 
 ## Appendix: commitment form for laboratory entry (p. 22)
 
@@ -512,4 +517,4 @@ After demonstrating the project to the supervisor and receiving approval to comp
 
 ---
 
-*End of translated handbook. Figures on the original cover, the screenshots on pp. 20–21, and the original graphical layout are represented by their substantive text rather than embedded image files.*
+*End of translated Winter 2026–2027 handbook. Figures on the cover, diagrams, screenshots on pp. 20–21, and the original graphical layout are represented by substantive text rather than embedded images.*

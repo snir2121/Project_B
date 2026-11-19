@@ -1,17 +1,21 @@
 # High-Speed Digital Systems Laboratory — Introduction Slides
 
-**Technion | High-Speed Digital Systems Laboratory (HS-DSL)**  
+**Technion | High-Speed Digital Systems Laboratory (HS-DSL) and ACESL**  
 **Research and teaching laboratory**  
 http://diglab.technion.ac.il
 
-> English Markdown version of *project_intraduction.pdf* (12 pages). The source is already mainly in English; Hebrew content on slides 9–11 has been translated. The slides' original dates and technical details are preserved as printed.
+> English Markdown version of *lab_guidelines2_2027.pdf* (12 slides). The source is mostly English, with Hebrew portions on slides 9–11 translated. Original dates, administrative instructions and technical details are preserved.
 
 ## Slide 1 — High-Speed Digital Systems Laboratory
 
-**HS-DSL — A research and teaching laboratory**  
+**HS-DSL / ACESL — Research and teaching laboratories**  
 Website: http://diglab.technion.ac.il
 
 ## Slide 2 — Activities
+
+### Course
+
+- High Communication Channels for Chips.
 
 ### Research
 
@@ -20,16 +24,18 @@ Website: http://diglab.technion.ac.il
 
 ### Laboratory educational activities
 
-- **Projects:** 35 projects annually (approximately 70 students).
-- **Experiments:** Approximately 400 students annually:
+- **Projects:** 40 projects annually (approximately 80 students).
+- **Experiments:** Approximately 350 students annually:
   1. Digital Systems Laboratory.
   2. Computer Architecture Laboratory.
+  3. Computer Processors Laboratory.
 
 ## Slide 3 — Laboratory staff
 
 | Role | Name |
 |---|---|
-| Laboratory manager | Mony Orbach |
+| Laboratory manager, HSDSL | Mony Orbach |
+| Laboratory manager, PEARL | Dany Weinfeld |
 | Application engineer | Ina Rivkin |
 | Project coordinator | Oz Shmueli |
 | Technician | Lena Bolkin |
@@ -39,11 +45,11 @@ Website: http://diglab.technion.ac.il
 ```text
 Problem analysis
       ↓
-Solution algorithm ────→ PDR (Specification) presentation — 05/05/25
+Solution algorithm ────→ PDR (Specification) presentation — 30/11/26
       ↓
 Project design
       ↓
-Implementing algorithm ─→ Midterm presentation — 18/06/25
+Implementing algorithm ─→ Midterm presentation — 05/01/27
 ```
 
 ## Slide 5 — Project life cycle (continued)
@@ -64,7 +70,7 @@ The illustration shows an iterative feedback loop from **result analysis** throu
 
 ## Slide 6 — PDR: Preliminary Design Review presentation
 
-**Date printed on slide: 05/05/25**
+**Date printed on slide: 30/11/26**
 
 - Motivation and background.
 - Project goals.
@@ -100,7 +106,7 @@ The illustration shows an iterative feedback loop from **result analysis** throu
 - You can also connect to the partition from a computer outside the laboratory by mapping the following network path (substitute your group number):
 
   ```text
-  \\ee-ftp-stud.ef.technion.ac.il\Diglab_Projects\022024\Prj_<group-number>
+  \\ee-ftp-stud.ef.technion.ac.il\Diglab_Projects\012026\Prj_<group-number>
   ```
 
 - Local disks are write-protected except for **C:\TEMP**, which is cleared periodically.
@@ -109,9 +115,13 @@ The illustration shows an iterative feedback loop from **result analysis** throu
 
 ## Slide 10 — Presentation registration
 
-- Registration for presentations will take place **after the holiday break**. A registration email will be sent.
-- Presentations will be held **4–15 May 2025**.
-- Specification presentations for projects supervised by **Boaz Mizrahi** will take place **4 May 2025, 08:30–12:30**.
+The slide provides scheduling details for **specification (PDR) presentations**:
+
+- Groups supervised by **Boaz Mizrahi**: **December 20–21, 2026**.
+- Other groups: **November 30–December 9, 2026**.
+- An email will be sent for registration for the specification presentations.
+
+> These are supervisor-group presentation windows printed on slide 10; slide 6 gives November 30, 2026 as the general PDR date.
 
 ## Slide 11 — Laboratory website
 
@@ -125,4 +135,4 @@ The slide displays the laboratory website's home page.
 
 ---
 
-*End of English Markdown version. Decorative logos, photos and screenshots are not embedded; their relevant text has been retained. The source's slide 9 network path uses `022024`, which differs from the handbook's `012024`; each is preserved exactly as written in its own PDF.*
+*End of English Markdown version. Decorative logos, photos and screenshots are not embedded; their relevant text has been retained. The slide 9 network path is retained with the `012026` semester directory as printed.*
