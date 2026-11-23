@@ -26,14 +26,9 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Notes:**
 
 ### T4. Get access to a gpu station and move the data there.
-- **Status:** [ ]
+- **Status:** [~]
 - **Priority:** High
-- **Notes:** - waiting for Mony's answer.
-
-### T5. Find out the frequency resolution from the monitor manufacturer
-- **Status:** [ ]
-- **Priority:** Low
-- **Notes:**
+- **Notes:** - waiting for Mony's answer. waiting for 
 
 ### T7. Classify the raw data
 - **Status:** [ ]
@@ -42,7 +37,7 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Notes:**
 
 ### T8. Confirm whether classified Long QT data exists
-- **Status:** [ ]
+- **Status:** [~]
 - **Priority:** High
 - **Description:** Ask the doctor whether classified Long QT samples are available; Boaz indicated that they may not be.
 - **Notes:** The project priority is currently Brugada, but this determines whether a Long QT classifier is feasible.
@@ -75,3 +70,8 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Status:** [x]
 - **Priority:** High
 - **Notes:**
+
+### T5. Find out the frequency resolution from the monitor manufacturer
+- **Status:** [x]
+- **Priority:** Low
+- **Notes:** The freq can not be changes according to Elia
