@@ -42,19 +42,6 @@ When a task is done, set its Status to [x], add the completion date to Notes, an
 - **Description:** Ask the doctor whether classified Long QT samples are available; Boaz indicated that they may not be.
 - **Notes:** The project priority is currently Brugada, but this determines whether a Long QT classifier is feasible.
 
-### T9. Resolve project questions with Boaz and the doctor
-- **Status:** [ ]
-- **Priority:** High
-- **Description:** Confirm the clinical priorities, target labels, and required performance before choosing the final project direction and model.
-- **Notes:** Questions to answer:
-  - Which is more important clinically: Brugada syndrome or Long QT syndrome?
-  - What segmentation accuracy, in milliseconds, is clinically useful?
-  - Which Brugada types or ECG patterns should be classified?
-  - What false-positive and false-negative rates are acceptable, and which error is more serious?
-  - Which data and labels are approved and available?
-  - Should the project prioritize Brugada classification, ECG-wave segmentation, or an end-to-end system?
-  - What should the final product demonstrate: a research model, working prototype, or clinician-facing application?
-
 ### T10. Prepare for the meeting with Miri and update the project documents
 - **Status:** [ ]
 - **Priority:** High
